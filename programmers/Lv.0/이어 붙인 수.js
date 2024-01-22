@@ -3,26 +3,43 @@
 // return하도록 solution 함수를 완성해주세요.
 
 
+// const arr = [1,4,3,9]
+
+// function solution () {
+
+//     let even = []
+//     let odd = []
+
+//     arr.forEach((item,index)=>{
+//         if(item%2 === 0) {
+//  even.push(String(item))
+
+//         } else {
+//             odd.push(String(item))
+//         }
+//     })
+
+//    const answer= Number(even.join(''))+Number(odd.join(''))
+
+//    return answer
+   
+// }
+
+// console.log(solution())
+
 const arr = [1,4,3,9]
 
 function solution () {
-
-    let even = []
     let odd = []
+    let even = []
 
-    arr.forEach((item,index)=>{
-        if(item%2 === 0) {
- even.push(String(item))
-
-        } else {
-            odd.push(String(item))
-        }
+    arr.forEach((item)=>{
+        if(item % 2 === 0) even.push(item)
+        if(item % 2 === 1) odd.push(item)
     })
 
-   const answer= Number(even.join(''))+Number(odd.join(''))
-
-   return answer
-   
+    const answer = Number(odd.join("")) + Number(even.join(""))
+    return answer
 }
 
 console.log(solution())
