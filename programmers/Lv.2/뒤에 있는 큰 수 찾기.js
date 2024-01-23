@@ -5,3 +5,14 @@
 // 입출력 예1) numbers = [2, 3, 3, 5] result = 	[3, 5, 5, -1]
 // 입출력 예2) numbers = [9, 1, 5, 3, 6, 2] result = [-1, 5, 6, 6, -1, -1]
 
+
+function solution (arr) {
+    let newArr = []
+    for(let i=0; i<arr.length; i++) {
+        if(arr[i])
+        newArr.push(arr[i])
+    }
+    console.log(newArr,'arr')
+}
+
+solution([1,2,3,4,5])
